@@ -82,7 +82,7 @@ with st.sidebar:
     
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key=api_key
+    api_key=api_key if api_key else "dummy_key"
 )
 
 if "messages" not in st.session_state:
