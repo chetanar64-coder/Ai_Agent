@@ -39,12 +39,12 @@ def search_web(query: str, tavily_api_key: str) -> str:
 # Setup OpenRouter client
 with st.sidebar:
     st.header("Settings")
-    api_key = st.text_input("Enter your OpenRouter API Key", value="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", type="password")
+    api_key = st.text_input("Enter your OpenRouter API Key", value="", type="password")
     st.markdown("[Get your OpenRouter API key here](https://openrouter.ai/keys)")
     
     st.divider()
     
-    tavily_api_key = st.text_input("Enter your Tavily API Key (for Web Search)", value="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", type="password")
+    tavily_api_key = st.text_input("Enter your Tavily API Key (for Web Search)", value="", type="password")
     st.markdown("[Get your Tavily key here](https://app.tavily.com/home)")
     
     # Model selection
